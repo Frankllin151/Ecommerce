@@ -1,0 +1,785 @@
+*{
+    margin: 0;
+padding: 0;
+font-family: sans-serif;
+
+}
+body{
+    height: 100%;
+
+}
+/*  Header  */
+.menu-btn{
+    color: #424144;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #f3f4f6;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+
+}
+
+.navbar .logo h1{
+    color: #424144;
+    border-bottom: 3px solid #fd6561;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color:#424144;
+    border-bottom: 3px solid transparent ;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+.navbar .menu li .active{
+    border-bottom:  3px solid #f63e4e;
+}
+
+.navbar .menu li a i{
+    color:  #f63e4e;
+}
+.navbar .menu li a:hover{
+    border-bottom:  3px solid #f63e4e;
+}
+/*login and register*/
+
+.login-register{
+    display: flex;
+    justify-content: flex-end;
+    
+    padding: 100px 500px;
+}
+.area-rg-lg{
+    color: #424144;
+    width: 350px;
+    height: 450px;
+    background-color:#f3f4f6;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.btn-area{
+    display: flex;
+    padding: 30px 0px;
+   justify-content: space-around;
+}
+.register-button, .login-button{
+ cursor: pointer;
+font-size: 20px;
+font-weight: bold;
+}
+.register-button:hover , .login-button:hover{
+    border-bottom: 3px solid #f63e4e;
+}
+
+.active-lg-rg{
+    border-bottom: 3px solid #f63e4e;
+}
+
+
+
+.area-login form{
+    display: flex;
+    justify-content: center;
+    
+}
+.area-login form .input-style{
+    width: 80%;
+    padding: 30px 0px;
+}
+.input-style div  {
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.input-style div input{
+    width: 90%;
+    background-color: #f3f4f6;
+    border: none;
+    color: #424144;  
+    
+
+}
+
+.input-style div input:hover{
+    border: 0px ;
+}
+.input-style div input:focus{
+    outline: 0;
+}
+.input-style div input:nth-child(1), .input-style div input:nth-child(2){
+    padding: 8px 0px;
+    
+
+
+
+}
+.btn-login{
+    background-color: #f63e4e;
+cursor: pointer;
+   }
+.btn-login:hover{
+background-color: #fd6561;
+cursor: pointer;
+}
+
+
+/**---area-register--**/
+.area-login form .input-style-register{
+    width: 80%;
+    padding: 30px 0px;
+}
+.input-style-register div   {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 14px ;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.input-style-register div input{
+    width: 90%;
+   
+    background-color: #f3f4f6;
+    border: none;
+    color: #424144;  
+    
+
+}
+
+.input-style-register div input:hover{
+    border: 0px ;
+}
+.input-style-register div input:focus{
+    outline: 0;
+}
+.input-style-register div input:nth-child(1), .input-style div input:nth-child(2){
+    padding: 8px 0px;
+    
+
+
+
+}
+.btn-login{
+         background-color: #f63e4e;
+cursor: pointer;
+        }
+.btn-login:hover{
+background-color: #fd6561;
+cursor: pointer;
+}
+/*********
+footer = rodape
+*****/
+footer{
+    background-color: #f3f4f6;
+    height: 10vh;
+}
+
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #f63e4e;
+    font-weight: bold;
+}
+
+
+@media (min-width:921px) and (max-width: 1200px){
+    .menu-btn{
+        color: #424144;
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    
+    .navbar{
+        padding: 20px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #f3f4f6;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    
+    }
+    
+    .navbar .logo h1{
+        color: #424144;
+        border-bottom: 3px solid #fd6561;
+    }
+    .navbar .menu li{
+        list-style: none;
+        display: inline-block;
+    
+    }
+    
+    .navbar .menu li a {
+        display: block;
+        margin-left: 20px;
+        color:#424144;
+        border-bottom: 3px solid transparent ;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    
+    
+    }
+    .navbar .menu li .active{
+        border-bottom:  3px solid #f63e4e;
+    }
+    
+    .navbar .menu li a i{
+        color:  #f63e4e;
+    }
+    .navbar .menu li a:hover{
+        border-bottom:  3px solid #f63e4e;
+    }
+    /*login and register*/
+    
+    .login-register{
+        display: flex;
+        justify-content: flex-end;
+        
+        padding: 100px 300px;
+    }
+    .area-rg-lg{
+        color: #424144;
+        width: 350px;
+        height: 450px;
+        background-color:#f3f4f6;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .btn-area{
+        display: flex;
+        padding: 30px 0px;
+       justify-content: space-around;
+    }
+    /*add none-lg-rg with javascript*/
+    .none-lg-rg{
+        display: none;
+    }
+    .register-button, .login-button{
+     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    }
+    .register-button:hover , .login-button:hover{
+        border-bottom: 3px solid #f63e4e;
+    }
+    
+    .active-lg-rg{
+        border-bottom: 3px solid #f63e4e;
+    }
+    
+    
+    
+    .area-login form{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .registernone{
+        display: none;
+    }
+    .area-login form .input-style{
+        width: 80%;
+        padding: 30px 0px;
+    }
+    .input-style div  {
+        margin-top: 30px;
+        width: 100%;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+        border: none;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .input-style div input{
+        width: 90%;
+        background-color: #f3f4f6;
+        border: none;
+        color: #424144;  
+        
+    
+    }
+    
+    .input-style div input:hover{
+        border: 0px ;
+    }
+    .input-style div input:focus{
+        outline: 0;
+    }
+    .input-style div input:nth-child(1), .input-style div input:nth-child(2){
+        padding: 8px 0px;
+        
+    
+    
+    
+    }
+    .btn-login{
+        background-color: #f63e4e;
+    cursor: pointer;
+       }
+    .btn-login:hover{
+    background-color: #fd6561;
+    cursor: pointer;
+    }
+    
+    
+    /**---area-register--**/
+    .area-login form .input-style-register{
+        width: 80%;
+        padding: 30px 0px;
+    }
+    .input-style-register div   {
+        margin-top: 30px;
+        width: 90%;
+        margin-left: 14px ;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .input-style-register div input{
+        width: 90%;
+       
+        background-color: #f3f4f6;
+        border: none;
+        color: #424144;  
+        
+    
+    }
+    
+    .input-style-register div input:hover{
+        border: 0px ;
+    }
+    .input-style-register div input:focus{
+        outline: 0;
+    }
+    .input-style-register div input:nth-child(1), .input-style div input:nth-child(2){
+        padding: 8px 0px;
+        
+    
+    
+    
+    }
+    .btn-login{
+             background-color: #f63e4e;
+    cursor: pointer;
+            }
+    .btn-login:hover{
+    background-color: #fd6561;
+    cursor: pointer;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************ANDROID AND TABLE ***************/
+@media (min-width:320px)and (max-width:719px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+    
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: #f3f4f6;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.activemn{
+        left: 0%;
+    }
+    .navbar .menu li{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .menu li a{
+        margin: 10px 0 ;
+    }
+     /********content-login*******/
+     
+
+     /*login and register*/
+
+.login-register{
+    display: flex;
+    justify-content: flex-end;
+    
+    padding: 100px 0px;
+}
+.area-rg-lg{
+    color: #424144;
+    width: 350px;
+    height: 450px;
+    background-color:#f3f4f6;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.btn-area{
+    display: flex;
+    padding: 30px 0px;
+   justify-content: space-around;
+}
+.register-button, .login-button{
+ cursor: pointer;
+font-size: 20px;
+font-weight: bold;
+}
+.register-button:hover , .login-button:hover{
+    border-bottom: 3px solid #f63e4e;
+}
+
+.active-lg-rg{
+    border-bottom: 3px solid #f63e4e;
+}
+
+
+
+.area-login form{
+    display: flex;
+    justify-content: center;
+    
+}
+.area-login form .input-style{
+    width: 80%;
+    padding: 30px 0px;
+}
+.input-style div  {
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.input-style div input{
+    width: 90%;
+    background-color: #f3f4f6;
+    border: none;
+    color: #424144;  
+    
+
+}
+
+.input-style div input:hover{
+    border: 0px ;
+}
+.input-style div input:focus{
+    outline: 0;
+}
+.input-style div input:nth-child(1), .input-style div input:nth-child(2){
+    padding: 8px 0px;
+    
+
+
+
+}
+.btn-login{
+    background-color: #f63e4e;
+cursor: pointer;
+   }
+.btn-login:hover{
+background-color: #fd6561;
+cursor: pointer;
+}
+
+
+/**---area-register--**/
+.area-login form .input-style-register{
+    width: 80%;
+    padding: 30px 0px;
+}
+.input-style-register div   {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 14px ;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.input-style-register div input{
+    width: 90%;
+   
+    background-color: #f3f4f6;
+    border: none;
+    color: #424144;  
+    
+
+}
+
+.input-style-register div input:hover{
+    border: 0px ;
+}
+.input-style-register div input:focus{
+    outline: 0;
+}
+.input-style-register div input:nth-child(1), .input-style div input:nth-child(2){
+    padding: 8px 0px;
+    
+
+
+
+}
+.btn-login{
+         background-color: #f63e4e;
+cursor: pointer;
+        }
+.btn-login:hover{
+background-color: #fd6561;
+cursor: pointer;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************TABLE***************/
+
+/****************ANDROID AND TABLE ***************/
+@media (min-width:720px)and (max-width:920px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+    
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: #f3f4f6;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.activemn{
+        left: 0%;
+    }
+    .navbar .menu li{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .menu li a{
+        margin: 10px 0 ;
+    }
+     /********content-login*******/
+     
+
+     /*login and register*/
+
+.login-register{
+    display: flex;
+    justify-content: flex-end;
+    
+    padding: 100px 250px;
+}
+.area-rg-lg{
+    color: #424144;
+    width: 350px;
+    height: 450px;
+    background-color:#f3f4f6;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.btn-area{
+    display: flex;
+    padding: 30px 0px;
+   justify-content: space-around;
+}
+.register-button, .login-button{
+ cursor: pointer;
+font-size: 20px;
+font-weight: bold;
+}
+.register-button:hover , .login-button:hover{
+    border-bottom: 3px solid #f63e4e;
+}
+
+.active-lg-rg{
+    border-bottom: 3px solid #f63e4e;
+}
+
+
+
+.area-login form{
+    display: flex;
+    justify-content: center;
+    
+}
+.area-login form .input-style{
+    width: 80%;
+    padding: 30px 0px;
+}
+.input-style div  {
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.input-style div input{
+    width: 90%;
+    background-color: #f3f4f6;
+    border: none;
+    color: #424144;  
+    
+
+}
+
+.input-style div input:hover{
+    border: 0px ;
+}
+.input-style div input:focus{
+    outline: 0;
+}
+.input-style div input:nth-child(1), .input-style div input:nth-child(2){
+    padding: 8px 0px;
+    
+
+
+
+}
+.btn-login{
+    background-color: #f63e4e;
+cursor: pointer;
+   }
+.btn-login:hover{
+background-color: #fd6561;
+cursor: pointer;
+}
+
+
+/**---area-register--**/
+.area-login form .input-style-register{
+    width: 80%;
+    padding: 30px 0px;
+}
+.input-style-register div   {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 14px ;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.input-style-register div input{
+    width: 90%;
+   
+    background-color: #f3f4f6;
+    border: none;
+    color: #424144;  
+    
+
+}
+
+.input-style-register div input:hover{
+    border: 0px ;
+}
+.input-style-register div input:focus{
+    outline: 0;
+}
+.input-style-register div input:nth-child(1), .input-style div input:nth-child(2){
+    padding: 8px 0px;
+    
+
+
+
+}
+.btn-login{
+         background-color: #f63e4e;
+cursor: pointer;
+        }
+.btn-login:hover{
+background-color: #fd6561;
+cursor: pointer;
+}
+
+}
