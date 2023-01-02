@@ -10,3 +10,8 @@ Menubtn.addEventListener('click', (e) =>{
        menu.classList.toggle("activemn");
     
 });
+
+
+let urlNow = window.location 
+
+document.querySelector('.menu li a[href="'+urlNow+'"]').classList.add('active');
