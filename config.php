@@ -1,4 +1,5 @@
 <?php
+session_status() === PHP_SESSION_ACTIVE ?: session_start();
 
 $Ba_se = 'http://127.0.0.1/DPshopp/';
 

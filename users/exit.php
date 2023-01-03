@@ -12,6 +12,6 @@ $sql->bindValue(':id', $id);
 
 $sql->execute(); 
 
-header("Location: http://127.0.0.1/loginHKL");
+header("Location: ". $Ba_se);
 
 

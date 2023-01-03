@@ -11,7 +11,16 @@ Menubtn.addEventListener('click', (e) =>{
     
 });
 
+// get value of input in index.php 
+//const tagA = document.querySelector('#myshopping');
 
+//tagA.href = "https://www.google.com.br"
+
+//console.log(tagA);
+
+
+
+// 
 let urlNow = window.location 
 
 document.querySelector('.menu li a[href="'+urlNow+'"]').classList.add('active');

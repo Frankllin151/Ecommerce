@@ -1,14 +1,20 @@
-<?php
+<?php require "../config.php" ;
+
+
 require '../dao/daomysqlUsuario.php'; 
 
-require '../config.php';
+
 
 $daomysql = new UsuariodaomySQ($pdo);
 
 $daomysql->checkID();
 
 
+?>
 
+<link rel="stylesheet" href="<?= $Ba_se ?>/assets/css/index.css">
+<?php 
+ require "../header.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,13 +24,14 @@ $daomysql->checkID();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body> <br>
+<body>
 <?php
  $idexit =  $_SESSION['id'];
  
+$nameUSerlogado = $_SESSION['name'];
 ?>
-    
-    <form action="<?= $Ba_se; ?>" method="POST">
+   <h1><?php echo $nameUSerlogado;  ?></h1>
+  <form action="<?= $Ba_se; ?>users/exit.php" method="POST">
     <input type="submit" value="Exit">
                <input type="hidden" name="id"  value="<?= $idexit[0] ?>">
 </form>

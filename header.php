@@ -1,4 +1,13 @@
-<?php  require 'config.php'; ?>
+<?php  
+require 'config.php';
+//require 'dao/daomysqlUsuario.php'; 
+
+
+
+//$daomysql = new UsuariodaomySQ($pdo);
+
+$id_user = $_SESSION['id_user'] ;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +20,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+  
 <nav class="navbar">
         <div class="logo">
             <h1>Dp shop</h1>
@@ -20,8 +29,8 @@
                 <li><a id="home" href="<?= $Ba_se ?>" >Home</a></li>
                 <li><a id="arrivals" href="<?= $Ba_se ?>/partials/newarriavals.php">New Arrivals</a></li>
                 <li><a id="fashion" href="<?= $Ba_se ?>/partials/fashion.php">Fashion</a></li>
-                <li><a id="account" href="<?= $Ba_se ?>/partials/account.php">Account</a></li>
-                <li><a id="myshopping" href="<?= $Ba_se ?>/partials/myshopping.php"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a id="account" href="<?= $Ba_se ?>/users/account.php">Account</a></li>
+                <li><a id="myshopping" href="<?= $Ba_se ?>users/myshopping.php/<?= $id_user ?>"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         
             <!----Reposinve button-->

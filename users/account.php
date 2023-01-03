@@ -1,3 +1,8 @@
+
+<?php require "../config.php" ?>
+
+<link rel="stylesheet" href="<?= $Ba_se ?>/assets/css/index.css">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +19,10 @@
     }
 </style>
 <body>
- 
-    <section class="content-login" style="background-image: url('assets/image/login3.png');">
+<?php 
+ require "../header.php";
+?>
+    <section class="content-login" style="background-image: url('<?= $Ba_se?>assets/image/login3.png');">
         <div class="login-register">
           
         <div class="area-rg-lg">
@@ -26,8 +33,16 @@
                <div class="login-button active-lg-rg" id="login-btn">Login</div>
           </div>
           <div class="area-login  ">
-            <form action="" method="post">
+            <form action="<?= $Ba_se ?>users/login_action.php" method="post">
                <div class="input-style" >
+               <?php
+    /// Generate Token 
+    $token = openssl_random_pseudo_bytes(16);
+              $token = bin2hex($token);
+
+         
+        ?>
+                <input type="hidden" name="token" value="<?= $token; ?>">
                 <div><input type="email" name="email" placeholder="E-mail"></div>
                 <div><input type="password" name="password" placeholder="password"></div>
                 <div class="btn-login"><input type="submit" value="Login" style="background-color: #f63e4e  ;"></div>
@@ -48,14 +63,13 @@
         </div>
         </div>
     </section>
-    <footer>
-        <p>Copyrigths at <a href="">DP shops</a></p>
-       </footer>
+ 
 
    
 
-</script>
+    <?php require "../footer.php"; ?>
 </body>
 <script src="<?= $Ba_se ?>/assets/js/script.js"></script>
 <script src="<?= $Ba_se ?>/assets/js/loginrg.js"></script>
 </html>
+

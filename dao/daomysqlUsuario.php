@@ -144,10 +144,16 @@ class UsuariodaomySQ implements UsuarioDao  {
             $insertToken->bindValue(':token', $Tokencheck);
                 
             $insertToken->execute();
-            header('Location: http://127.0.0.1/DPshopp/users/profile.php/'.$id);   
+
+            header('Location: http://127.0.0.1/DPshopp/users/myshopping.php/'.$id);
+
+            
+
+            
+
             } else{
               
-               header('Location: http://127.0.0.1/DPshopp/users/profile.php/'.$id);
+               header('Location: http://127.0.0.1/DPshopp/users/myshopping.php/'.$id);
          
         
             }
@@ -157,7 +163,7 @@ class UsuariodaomySQ implements UsuarioDao  {
            }
 
      } else{
-      header("Location: http://127.0.0.1/DPshopp/users/login.php");
+      header("Location: http://127.0.0.1/DPshopp/users/account.php");
       
      }
 
@@ -165,8 +171,13 @@ class UsuariodaomySQ implements UsuarioDao  {
       public function checkID(){
         $UrlAtual= "$_SERVER[REQUEST_URI]";
          $idUSEr = explode('/', $UrlAtual);
-            $idUSuARIOatual = $idUSEr[4];
-          
+            
+         $idUSuARIOatual = $idUSEr[4];
+              
+         
+
+       
+
         $idDTbs = $this->pdo->prepare('SELECT *  FROM USERS WHERE id = :id');
 
         $idDTbs->bindValue(':id', $idUSuARIOatual);
@@ -177,22 +188,24 @@ class UsuariodaomySQ implements UsuarioDao  {
        
        
         if($idGetAll['id'] == $idUSuARIOatual){
-          session_start();
+         
+          $_SESSION['id_user'] = $idUSEr[4];
 
           $_SESSION['id'] = $idGetAll;
           
+          $_SESSION['name'] = $idGetAll['name'];
           
           if(!$idGetAll['token']){
-            header("Location: http://127.0.0.1/DPshopp/users/login.php");  
+            header("Location: http://127.0.0.1/DPshopp/users/account.php");  
           } else{
-            echo 'Bem vindo: '. $idGetAll['name'];
+           
          
           
      
           }
           
         } else{
-          header("Location: http://127.0.0.1/DPshopp/users/register.php");
+          header("Location: http://127.0.0.1/DPshopp/users/account.php");
         }
         
        

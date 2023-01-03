@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="<?= $Ba_se ?>/assets/css/loginorregister.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/loginorregister.css">
+    <title>Admin</title>
 </head>
 <style>
     .area-register{
@@ -14,16 +14,32 @@
     }
 </style>
 <body>
- 
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Dp shop</h1>
+        </div>
+            <ul class="menu ">
+                <li><a href=""  >Home</a></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Fashion</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+          
+        
+            <!----Reposinve button-->
+            <div class="menu-btn">
+                <i class="fa fa-bars "></i>
+            </div>
+       
+    </nav>
     <section class="content-login" style="background-image: url('assets/image/login3.png');">
         <div class="login-register">
           
         <div class="area-rg-lg">
           <div class="btn-area">
-            <div class="register-button" id="register-btn">
-                Register
-               </div>
-               <div class="login-button active-lg-rg" id="login-btn">Login</div>
+         
+               <div class="login-button active-lg-rg" id="login-btn">Admin</div>
           </div>
           <div class="area-login  ">
             <form action="" method="post">
@@ -34,28 +50,16 @@
                </div>
             </form>
           </div>
-          <div class="area-register ">
-            <form action="" method="post">
-               <div class="input-style-register" >
-                   <div><input type="text" name="name" placeholder="Your Name"></div>
-                   <div><input type="email" name="email" placeholder="E-mail"></div>
-                   <div><input type="password" name="password" placeholder="password"></div>
-                   <div><input type="text" name="cpf" placeholder="Your cpf"></div>
-                   <div class="btn-login"><input type="submit" value="Login" style="background-color: #f63e4e  ;"></div>
-                  </div>
-            </form>
-         </div>
+         
         </div>
         </div>
     </section>
     <footer>
-        <p>Copyrigths at <a href="">DP shops</a></p>
+        <p>Copyrigths at <a href="">DP shops</a> &nbsp &nbsp  <a href="" style="color: #424144;">Admin</a></p> 
        </footer>
 
    
 
 </script>
 </body>
-<script src="<?= $Ba_se ?>/assets/js/script.js"></script>
-<script src="<?= $Ba_se ?>/assets/js/loginrg.js"></script>
 </html>

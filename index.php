@@ -1,7 +1,12 @@
 <?php
 require 'config.php';
 ?>
-
+  <?php
+    
+    
+    $id_user = $_SESSION['id_user'] ;
+          
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +20,7 @@ require 'config.php';
 
 <body> 
 <?php require "header.php" ?>
-
+ 
     <section class="content" style="background-image: url('assets/image/imgback.png');">
         <h1>New Arrivals For men & Women </h1>
         <p>Get The best Women Fashion Arrivals</p>
@@ -176,9 +181,7 @@ require 'config.php';
      </div>
     </div>
    </section>
-   <footer>
-    <p>Copyrigths at <a href="">DP shops</a></p>
-   </footer>
+   <?php require 'footer.php'; ?>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
              $(".menu-btn").click(function(){
