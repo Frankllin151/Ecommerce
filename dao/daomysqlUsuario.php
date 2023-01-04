@@ -12,6 +12,7 @@ class UsuariodaomySQ implements UsuarioDao  {
     public $Ba_se;
     public function __construct(PDO $driver)
     {
+     
         $this->pdo = $driver;
     }
 
@@ -189,6 +190,8 @@ class UsuariodaomySQ implements UsuarioDao  {
        
         if($idGetAll['id'] == $idUSuARIOatual){
          
+          
+
           $_SESSION['id_user'] = $idUSEr[4];
 
           $_SESSION['id'] = $idGetAll;

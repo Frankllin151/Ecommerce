@@ -1,12 +1,7 @@
 <?php
 require 'config.php';
 ?>
-  <?php
-    
-    
-    $id_user = $_SESSION['id_user'] ;
-          
-    ?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>

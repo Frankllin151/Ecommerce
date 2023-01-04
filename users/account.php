@@ -50,12 +50,20 @@
             </form>
           </div>
           <div class="area-register ">
-            <form action="" method="post">
+            <form action="<?= $Ba_se ?>users/action_register.php" method="post">
                <div class="input-style-register" >
+               <?php
+    /// Generate Token 
+    $token = openssl_random_pseudo_bytes(16);
+              $token = bin2hex($token);
+
+         
+        ?>
+        <input type="hidden" name="token" value="<?= $token; ?>">
                    <div><input type="text" name="name" placeholder="Your Name"></div>
                    <div><input type="email" name="email" placeholder="E-mail"></div>
                    <div><input type="password" name="password" placeholder="password"></div>
-                   <div><input type="text" name="cpf" placeholder="Your cpf"></div>
+                  <!---- <div><input type="text" name="cpf" placeholder="Your cpf"></div>---->
                    <div class="btn-login"><input type="submit" value="Login" style="background-color: #f63e4e  ;"></div>
                   </div>
             </form>

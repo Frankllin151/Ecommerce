@@ -37,9 +37,9 @@ if($clasUser->findBYemail($email) === false){
      header('Location: http://127.0.0.1/DPshopp');
 
 } else{
- header('Location: http://127.0.0.1/DPshopp/users/register');
+ header('Location: http://127.0.0.1/DPshopp/users/account.php');
 }
 } else{
-    header('Location: http://127.0.0.1/DPshopp/users/register');
+    header('Location: http://127.0.0.1/DPshopp/users/account.php');
 
 }

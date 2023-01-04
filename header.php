@@ -4,9 +4,21 @@ require 'config.php';
 
 
 
-//$daomysql = new UsuariodaomySQ($pdo);
 
-$id_user = $_SESSION['id_user'] ;
+
+//$daomysql = new UsuariodaomySQ($pdo);
+  
+
+
+
+ 
+if( isset( $_SESSION['id_user']) ){
+    $id_user = $_SESSION['id_user'] ;    
+
+    
+} else{
+    
+}
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +28,7 @@ $id_user = $_SESSION['id_user'] ;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="<?= $Ba_se ?>/assets/css/index.css">
+    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -24,6 +36,7 @@ $id_user = $_SESSION['id_user'] ;
 <nav class="navbar">
         <div class="logo">
             <h1>Dp shop</h1>
+            
         </div>
             <ul class="menu ">
                 <li><a id="home" href="<?= $Ba_se ?>" >Home</a></li>
