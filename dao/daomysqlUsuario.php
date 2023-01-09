@@ -9,9 +9,10 @@ class UsuariodaomySQ implements UsuarioDao  {
     // variable database 
     private $pdo;
 
-    public $Ba_se;
+   
     public function __construct(PDO $driver)
     {
+      
      
         $this->pdo = $driver;
     }
@@ -28,6 +29,7 @@ class UsuariodaomySQ implements UsuarioDao  {
         $database->bindValue(':token', $add->getToken());
         
           $database->execute();
+          
 
         $add->setId($this->pdo->lastInsertId());
 
