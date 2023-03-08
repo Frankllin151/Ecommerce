@@ -1,7 +1,7 @@
 <?php 
            $picture = $_FILES['fileUpload'];
-            echo implode($picture)."<br>";
-
+            $generateCode =  implode($picture)."<br>";
+             
           /*  $name = $_POST['name']; 
             echo $name;
 

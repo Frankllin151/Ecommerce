@@ -13,7 +13,19 @@ Add
   * table 
   -acessory 
   -clothing 
+            *colunm           
+              -nome 
+              -desc 
+              -price 
+              -type 
+              - company
   -eletronic devisces
+             *colunm           
+              -nome 
+              -desc 
+              -price 
+              -type 
+              - company
   -shoes
           *colunm           
               -nome 
@@ -26,3 +38,6 @@ Add
 -Page dasboard still developing 
 -screen to add shopping still developing 
 -Page new Arrival still developing
+-page fashion still developing
+ + add dropdown with javascript
+ 
