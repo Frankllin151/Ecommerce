@@ -15,38 +15,38 @@ class Electronicdevices{
     public $company;
     
     public $picture;
-    
-    public function ValueId($vlid){
-        return $this->id = $vlid;
+     // insert data at database
+    public function ValueId(){
+        return $this->id;
     }
 
-    public function ValueName($vname){
-        return $this->name = $vname;
+    public function ValueName(){
+        return $this->name;
 
     }
 
-    public function ValueDeSc($vDesl){
-        return $this->description = $vDesl;
+    public function ValueDeSc(){
+        return $this->description;
     }
 
-    public function ValuePriCe($vPrice){
-        return $this->price = $vPrice;
+    public function ValuePriCe(){
+        return $this->price;
     }
 
-    public function ValueTyPe($vtYpEd){
-        return $this->type = $vtYpEd;
+    public function ValueTyPe(){
+        return $this->type;
     }
 
-    public function ValueCompanY($ComPANy){
-        return $this->company = $ComPANy;
+    public function ValueCompanY(){
+        return $this->company;
     }
 
-    public function Valuepct($pic){
-      return $this->picture = $pic;
+    public function Valuepct(){
+      return $this->picture;
   }
 
 
-                  // Insert Database
+                  // show data
     public function InsertID($I){
       $this->id = $I;
     }
@@ -77,5 +77,5 @@ class Electronicdevices{
 
 }
 interface ElectronicdevicesDAO{
-public function InsertItem($name, $description, $price, $type, $company, $picture);
+public function InsertItem(Electronicdevices  $addEle);
 }

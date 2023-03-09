@@ -16,8 +16,8 @@ class Electronicdevicesmysql implements ElectronicdevicesDAO{
         }
       
 
-    public function InsertItem($name, $description, $price, $type, $company, $picture){
-    
+    public function InsertItem(Electronicdevices  $addEle){
+               echo     $addEle->ValueName();
 
-    }
+    } 
 }

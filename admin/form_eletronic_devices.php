@@ -18,7 +18,7 @@
            Type of clothes: <br>
         <label for=""><input type="text" name="type"></label> <br>
           Item of which Company: <br>
-        <label for=""><input type="text"></label> <br>
+        <label for=""><input type="text" name="company"></label> <br>
        Choosse  Photo :  <br>
         <label for=""><input type="file" name="fileUpload"></label>
         <br>
